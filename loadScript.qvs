@@ -30,13 +30,13 @@ Let vLastFullYearMonth = Year('$(vLastFullMonth)')&Num(Month('$(vLastFullMonth)'
 
 Let vLast6Month = MonthEnd('$(vCurrentDate)',-7);
 Let vLast12Month = MonthEnd('$(vCurrentDate)',-13);
+
+//test comment
 ///$tab Change log
 /*
 7-25-2024	Anthony Cang	Create App
 11-14-2025	Anthony Cang	QZG-228,QZG-229
 */
-
-
 ///$tab tmp tables
 tmpOrder:
 LOAD
@@ -63,7 +63,6 @@ Mapping LOAD
 	EmpNo,
     Nm    
 Resident tmpActor;
-
 ///$tab facts
 Order:
 LOAD
@@ -134,7 +133,5 @@ Where
 Year(Date) >= '$(vStartYear)'
 and Year(Date) <= '$(vEndYear)'
 ;
-
-
 ///$tab drop tmp tables
 Drop table tmpOrder, tmpActor, tmpCalendar;
