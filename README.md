@@ -35,4 +35,3 @@ My new sheet|
 
 Branch Name|Qlik application
 ---|---
-main|[https://qlik.voky.com/sense/app/4728061f-40f5-4c21-9c60-08af3cf59027](https://qlik.voky.com/sense/app/4728061f-40f5-4c21-9c60-08af3cf59027)
