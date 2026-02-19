@@ -1,0 +1,140 @@
+///$tab Main
+SET ThousandSep=' ';
+SET DecimalSep=',';
+SET MoneyThousandSep=' ';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='# ##0,00 kr;-# ##0,00 kr';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='YYYY-MM-DD';
+SET TimestampFormat='YYYY-MM-DD hh:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=0;
+SET ReferenceDay=4;
+SET FirstMonthOfYear=1;
+SET CollationLocale='sv-SE';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='jan.;feb.;mars;apr.;maj;juni;juli;aug.;sep.;okt.;nov.;dec.';
+SET LongMonthNames='januari;februari;mars;april;maj;juni;juli;augusti;september;oktober;november;december';
+SET DayNames='mån;tis;ons;tors;fre;lör;sön';
+SET LongDayNames='måndag;tisdag;onsdag;torsdag;fredag;lördag;söndag';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+SET vQVDPathTransform='lib://Transform_v2 (azure_anthony.cang@mllrdev.com)';
+//SET vQVDPathTransform='lib://TEST_Transform';
+
+Let vCurrentDate = Date(Today());
+Let vEndYear = Year('$(vCurrentDate)');
+Let vStartYear = Num('$(vEndYear)')-1;
+Let vLastFullMonth = MonthEnd('$(vCurrentDate)',-1);
+Let vLastFullYearMonth = Year('$(vLastFullMonth)')&Num(Month('$(vLastFullMonth)'),00);
+
+Let vLast6Month = MonthEnd('$(vCurrentDate)',-7);
+Let vLast12Month = MonthEnd('$(vCurrentDate)',-13);
+///$tab Change log
+/*
+7-25-2024	Anthony Cang	Create App
+11-14-2025	Anthony Cang	QZG-228,QZG-229
+*/
+
+
+///$tab tmp tables
+tmpOrder:
+LOAD
+    *
+FROM [lib://Extract/Ord.qvd] (qvd)
+Where
+DB_Instans = 'F0002';
+
+tmpActor:
+LOAD
+	*   
+FROM [lib://Extract/Actor.qvd] (qvd)
+Where
+DB_Instans = 'F0002' // voky instance
+;
+
+tmpCalendar:
+LOAD
+    *
+FROM [$(vQVDPathTransform)/MasterCalendar.qvd] (qvd);
+///$tab maps
+mPurchaser:
+Mapping LOAD
+	EmpNo,
+    Nm    
+Resident tmpActor;
+
+///$tab facts
+Order:
+LOAD
+    OrdNo,    
+    Date(Date#(OrdDt,'YYYYMMDD'),'YYYY-MM-DD') as OrderDate,
+    Date(Date#(DME_ZG_Datum_4,'YYYYMMDD'),'YYYY-MM-DD') as DmeZgDatum4,
+    If(DME_ZG_Datum_4>0,1,0) as isCustomerComplaints,
+    DME_ZG_Datum_4,
+    DME_ZG_Datum_5,
+    Rsp,
+    If(Rsp>0,ApplyMap('mPurchaser',Rsp),'No Purchaser') as Purchaser,
+    DME_PSOrderType,
+    DME_ZG_Gr_19,
+    DME_ZG_Gr_4
+Resident tmpOrder
+Where
+TrTp=1
+and OrdTp=1
+and DME_CaspStatusNo>699 and DME_CaspStatusNo<800
+and Year(Date(Date#(OrdDt,'YYYYMMDD'),'YYYY-MM-DD')) >= '$(vStartYear)'
+and Date(Date#(OrdDt,'YYYYMMDD'),'YYYY-MM-DD') <= '$(vLastFullMonth)'
+;
+
+Calendar:
+LOAD
+    Date as OrderDate,
+    Year,
+    MonthNo,
+    YearMonth,
+    YearWeek,
+    WeekNo,
+    WeekDay,
+    Month
+Resident tmpCalendar
+Where
+Year(Date) >= '$(vStartYear)'
+and Year(Date) <= '$(vEndYear)'
+;
+
+NewComplaints:
+Load
+OrdNo as NewComplaintsOrdNo,
+Date(Date#(DME_ZG_Datum_4,'YYYYMMDD'),'YYYY-MM-DD') as ComplaintsDate
+Resident Order
+Where DME_ZG_Datum_4>0 and DME_ZG_Gr_19<>30;
+
+CompletedComplaints:
+Load
+OrdNo as CompletedComplaintsOrdNo,
+Date(Date#(DME_ZG_Datum_5,'YYYYMMDD'),'YYYY-MM-DD') as ComplaintsDate
+Resident Order
+Where DME_ZG_Datum_4>0 and DME_ZG_Gr_19<>30 and DME_ZG_Datum_5>0;
+
+OpenComplaints:
+Load
+OrdNo as OpenComplaintsOrdNo,
+Date(Date#(DME_ZG_Datum_4,'YYYYMMDD'),'YYYY-MM-DD') as ComplaintsDate
+Resident Order
+Where DME_ZG_Datum_4>0 and DME_ZG_Datum_5=0 
+and DME_ZG_Gr_4=0 and DME_ZG_Gr_19<>30;
+
+ComplaintsCalendar:
+LOAD
+    Date as ComplaintsDate,
+    YearWeek as ComplaintsDateYearWeek 
+Resident tmpCalendar
+Where
+Year(Date) >= '$(vStartYear)'
+and Year(Date) <= '$(vEndYear)'
+;
+
+
+///$tab drop tmp tables
+Drop table tmpOrder, tmpActor, tmpCalendar;

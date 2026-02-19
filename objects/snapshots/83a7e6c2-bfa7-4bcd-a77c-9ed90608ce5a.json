@@ -1,0 +1,1727 @@
+{
+  "qInfo": {
+    "qId": "83a7e6c2-bfa7-4bcd-a77c-9ed90608ce5a",
+    "qType": "snapshot"
+  },
+  "qMetaDef": {
+    "title": "",
+    "description": "",
+    "annotation": ""
+  },
+  "qIncludeVariables": true,
+  "creationDate": "2024-12-19T01:57:38.210Z",
+  "permissions": {
+    "update": true,
+    "publish": false,
+    "export": false,
+    "exportData": true,
+    "changeOwner": false,
+    "remove": true
+  },
+  "qMeta": {
+    "privileges": [
+      "read",
+      "update",
+      "delete",
+      "exportdata"
+    ]
+  },
+  "qSelectionInfo": {},
+  "qHyperCube": {
+    "qSize": {
+      "qcx": 5,
+      "qcy": 68951
+    },
+    "qDimensionInfo": [
+      {
+        "qFallbackTitle": "Order No",
+        "qApprMaxGlyphCount": 6,
+        "qCardinal": 68950,
+        "qSortIndicator": "D",
+        "qGroupFallbackTitles": [
+          "Order No"
+        ],
+        "qGroupPos": 0,
+        "qStateCounts": {
+          "qLocked": 0,
+          "qSelected": 0,
+          "qOption": 68950,
+          "qDeselected": 0,
+          "qAlternative": 0,
+          "qExcluded": 0,
+          "qSelectedExcluded": 0,
+          "qLockedExcluded": 0
+        },
+        "qTags": [
+          "$numeric",
+          "$integer"
+        ],
+        "qDimensionType": "N",
+        "qReverseSort": true,
+        "qGrouping": "N",
+        "qNumFormat": {
+          "qType": "I",
+          "qnDec": 0,
+          "qUseThou": 0,
+          "qDec": ",",
+          "qThou": " "
+        },
+        "qIsAutoFormat": true,
+        "qGroupFieldDefs": [
+          "OrdNo"
+        ],
+        "qMin": 29857,
+        "qMax": 301928,
+        "qContinuousAxes": true,
+        "qAttrExprInfo": [],
+        "qAttrDimInfo": [],
+        "qCardinalities": {
+          "qCardinal": 68950,
+          "qHypercubeCardinal": 68950,
+          "qAllValuesCardinal": -1
+        },
+        "autoSort": true,
+        "cId": "cxVamjz",
+        "othersLabel": "Others",
+        "textAlign": {
+          "auto": true,
+          "align": "left"
+        },
+        "representation": {
+          "type": "text",
+          "urlPosition": "dimension",
+          "urlLabel": "",
+          "linkUrl": "",
+          "imageSetting": "label",
+          "imageLabel": "",
+          "imageUrl": "",
+          "imageSize": "fitHeight",
+          "imagePosition": "topCenter"
+        }
+      },
+      {
+        "qFallbackTitle": "Customer Complaint Date",
+        "qApprMaxGlyphCount": 10,
+        "qCardinal": 283,
+        "qSortIndicator": "D",
+        "qGroupFallbackTitles": [
+          "Customer Complaint Date"
+        ],
+        "qGroupPos": 0,
+        "qStateCounts": {
+          "qLocked": 0,
+          "qSelected": 0,
+          "qOption": 283,
+          "qDeselected": 0,
+          "qAlternative": 0,
+          "qExcluded": 0,
+          "qSelectedExcluded": 0,
+          "qLockedExcluded": 0
+        },
+        "qTags": [
+          "$numeric",
+          "$integer",
+          "$timestamp",
+          "$date"
+        ],
+        "qDimensionType": "N",
+        "qReverseSort": true,
+        "qGrouping": "N",
+        "qNumFormat": {
+          "qType": "D",
+          "qnDec": 0,
+          "qUseThou": 0,
+          "qFmt": "YYYY-MM-DD"
+        },
+        "qIsAutoFormat": true,
+        "qGroupFieldDefs": [
+          "DME_ZG_Datum_4"
+        ],
+        "qMin": 44949,
+        "qMax": 45635,
+        "qAttrExprInfo": [],
+        "qAttrDimInfo": [],
+        "qCardinalities": {
+          "qCardinal": 283,
+          "qHypercubeCardinal": 283,
+          "qAllValuesCardinal": -1
+        },
+        "autoSort": true,
+        "cId": "QpjNtjP",
+        "othersLabel": "Others",
+        "textAlign": {
+          "auto": true,
+          "align": "left"
+        },
+        "representation": {
+          "type": "text",
+          "urlPosition": "dimension",
+          "urlLabel": "",
+          "linkUrl": "",
+          "imageSetting": "label",
+          "imageLabel": "",
+          "imageUrl": "",
+          "imageSize": "fitHeight",
+          "imagePosition": "topCenter"
+        }
+      },
+      {
+        "qFallbackTitle": "Has Complaint",
+        "qApprMaxGlyphCount": 1,
+        "qCardinal": 2,
+        "qSortIndicator": "A",
+        "qGroupFallbackTitles": [
+          "Has Complaint"
+        ],
+        "qGroupPos": 0,
+        "qStateCounts": {
+          "qLocked": 0,
+          "qSelected": 0,
+          "qOption": 2,
+          "qDeselected": 0,
+          "qAlternative": 0,
+          "qExcluded": 0,
+          "qSelectedExcluded": 0,
+          "qLockedExcluded": 0
+        },
+        "qTags": [
+          "$numeric",
+          "$integer"
+        ],
+        "qDimensionType": "N",
+        "qGrouping": "N",
+        "qNumFormat": {
+          "qType": "U",
+          "qnDec": 0,
+          "qUseThou": 0
+        },
+        "qIsAutoFormat": true,
+        "qGroupFieldDefs": [
+          "isCustomerComplaints"
+        ],
+        "qMin": 0,
+        "qMax": 1,
+        "qAttrExprInfo": [],
+        "qAttrDimInfo": [],
+        "qCardinalities": {
+          "qCardinal": 2,
+          "qHypercubeCardinal": 2,
+          "qAllValuesCardinal": -1
+        },
+        "autoSort": true,
+        "cId": "RXpTYK",
+        "othersLabel": "Others",
+        "textAlign": {
+          "auto": true,
+          "align": "left"
+        },
+        "representation": {
+          "type": "text",
+          "urlPosition": "dimension",
+          "urlLabel": "",
+          "linkUrl": "",
+          "imageSetting": "label",
+          "imageLabel": "",
+          "imageUrl": "",
+          "imageSize": "fitHeight",
+          "imagePosition": "topCenter"
+        }
+      },
+      {
+        "qFallbackTitle": "Year",
+        "qApprMaxGlyphCount": 4,
+        "qCardinal": 2,
+        "qSortIndicator": "A",
+        "qGroupFallbackTitles": [
+          "Year"
+        ],
+        "qGroupPos": 0,
+        "qStateCounts": {
+          "qLocked": 0,
+          "qSelected": 0,
+          "qOption": 2,
+          "qDeselected": 0,
+          "qAlternative": 0,
+          "qExcluded": 0,
+          "qSelectedExcluded": 0,
+          "qLockedExcluded": 0
+        },
+        "qTags": [
+          "$numeric",
+          "$integer"
+        ],
+        "qDimensionType": "N",
+        "qGrouping": "N",
+        "qNumFormat": {
+          "qType": "I",
+          "qnDec": 0,
+          "qUseThou": 0,
+          "qFmt": "###0",
+          "qDec": ","
+        },
+        "qIsAutoFormat": true,
+        "qGroupFieldDefs": [
+          "Year"
+        ],
+        "qMin": 2023,
+        "qMax": 2024,
+        "qAttrExprInfo": [],
+        "qAttrDimInfo": [],
+        "qCardinalities": {
+          "qCardinal": 2,
+          "qHypercubeCardinal": 2,
+          "qAllValuesCardinal": -1
+        },
+        "autoSort": true,
+        "cId": "xhFf",
+        "othersLabel": "Others",
+        "textAlign": {
+          "auto": true,
+          "align": "left"
+        },
+        "representation": {
+          "type": "text",
+          "urlPosition": "dimension",
+          "urlLabel": "",
+          "linkUrl": "",
+          "imageSetting": "label",
+          "imageLabel": "",
+          "imageUrl": "",
+          "imageSize": "fitHeight",
+          "imagePosition": "topCenter"
+        }
+      },
+      {
+        "qFallbackTitle": "Month",
+        "qApprMaxGlyphCount": 9,
+        "qCardinal": 12,
+        "qSortIndicator": "A",
+        "qGroupFallbackTitles": [
+          "Month"
+        ],
+        "qGroupPos": 0,
+        "qStateCounts": {
+          "qLocked": 0,
+          "qSelected": 0,
+          "qOption": 12,
+          "qDeselected": 0,
+          "qAlternative": 0,
+          "qExcluded": 0,
+          "qSelectedExcluded": 0,
+          "qLockedExcluded": 0
+        },
+        "qTags": [
+          "$ascii",
+          "$text"
+        ],
+        "qDimensionType": "D",
+        "qGrouping": "N",
+        "qNumFormat": {
+          "qType": "U",
+          "qnDec": 0,
+          "qUseThou": 0
+        },
+        "qIsAutoFormat": true,
+        "qGroupFieldDefs": [
+          "Month"
+        ],
+        "qMin": "NaN",
+        "qMax": "NaN",
+        "qAttrExprInfo": [],
+        "qAttrDimInfo": [],
+        "qCardinalities": {
+          "qCardinal": 12,
+          "qHypercubeCardinal": 12,
+          "qAllValuesCardinal": -1
+        },
+        "autoSort": false,
+        "cId": "MjLHMG",
+        "othersLabel": "Others",
+        "textAlign": {
+          "auto": true,
+          "align": "left"
+        },
+        "representation": {
+          "type": "text",
+          "urlPosition": "dimension",
+          "urlLabel": "",
+          "linkUrl": "",
+          "imageSetting": "label",
+          "imageLabel": "",
+          "imageUrl": "",
+          "imageSize": "fitHeight",
+          "imagePosition": "topCenter"
+        }
+      }
+    ],
+    "qMeasureInfo": [],
+    "qEffectiveInterColumnSortOrder": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ],
+    "qGrandTotalRow": [],
+    "qDataPages": [
+      {
+        "qMatrix": [
+          [
+            {
+              "qText": "275738",
+              "qNum": 275738,
+              "qElemNumber": 60457,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "274339",
+              "qNum": 274339,
+              "qElemNumber": 59756,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "274001",
+              "qNum": 274001,
+              "qElemNumber": 59588,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "273769",
+              "qNum": 273769,
+              "qElemNumber": 59481,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "268334",
+              "qNum": 268334,
+              "qElemNumber": 57066,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "267844",
+              "qNum": 267844,
+              "qElemNumber": 56797,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "265474",
+              "qNum": 265474,
+              "qElemNumber": 55585,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "260187",
+              "qNum": 260187,
+              "qElemNumber": 52862,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "258233",
+              "qNum": 258233,
+              "qElemNumber": 51841,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "250736",
+              "qNum": 250736,
+              "qElemNumber": 48119,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "250734",
+              "qNum": 250734,
+              "qElemNumber": 48118,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "250732",
+              "qNum": 250732,
+              "qElemNumber": 48116,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "250063",
+              "qNum": 250063,
+              "qElemNumber": 47774,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "248097",
+              "qNum": 248097,
+              "qElemNumber": 46819,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "246378",
+              "qNum": 246378,
+              "qElemNumber": 45835,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "240996",
+              "qNum": 240996,
+              "qElemNumber": 43492,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "240351",
+              "qNum": 240351,
+              "qElemNumber": 43318,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "240173",
+              "qNum": 240173,
+              "qElemNumber": 43248,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "238615",
+              "qNum": 238615,
+              "qElemNumber": 42856,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "238611",
+              "qNum": 238611,
+              "qElemNumber": 42854,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "233702",
+              "qNum": 233702,
+              "qElemNumber": 41799,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "233356",
+              "qNum": 233356,
+              "qElemNumber": 41709,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "233325",
+              "qNum": 233325,
+              "qElemNumber": 41700,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "231737",
+              "qNum": 231737,
+              "qElemNumber": 41474,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "230739",
+              "qNum": 230739,
+              "qElemNumber": 41371,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "230247",
+              "qNum": 230247,
+              "qElemNumber": 41267,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "229980",
+              "qNum": 229980,
+              "qElemNumber": 41223,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "229310",
+              "qNum": 229310,
+              "qElemNumber": 41040,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "228879",
+              "qNum": 228879,
+              "qElemNumber": 40940,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "227587",
+              "qNum": 227587,
+              "qElemNumber": 40718,
+              "qState": "O"
+            }
+          ]
+        ],
+        "qTails": [],
+        "qArea": {
+          "qLeft": 0,
+          "qTop": 0,
+          "qWidth": 1,
+          "qHeight": 30
+        }
+      },
+      {
+        "qMatrix": [
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ],
+          [
+            {
+              "qText": "-",
+              "qNum": "NaN",
+              "qElemNumber": -2,
+              "qState": "L",
+              "qIsNull": true
+            }
+          ]
+        ],
+        "qTails": [],
+        "qArea": {
+          "qLeft": 1,
+          "qTop": 0,
+          "qWidth": 1,
+          "qHeight": 30
+        }
+      },
+      {
+        "qMatrix": [
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "0",
+              "qNum": 0,
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ]
+        ],
+        "qTails": [],
+        "qArea": {
+          "qLeft": 2,
+          "qTop": 0,
+          "qWidth": 1,
+          "qHeight": 30
+        }
+      },
+      {
+        "qMatrix": [
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "2024",
+              "qNum": 2024,
+              "qElemNumber": 1,
+              "qState": "O"
+            }
+          ]
+        ],
+        "qTails": [],
+        "qArea": {
+          "qLeft": 3,
+          "qTop": 0,
+          "qWidth": 1,
+          "qHeight": 30
+        }
+      },
+      {
+        "qMatrix": [
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ],
+          [
+            {
+              "qText": "January",
+              "qNum": "NaN",
+              "qElemNumber": 0,
+              "qState": "O"
+            }
+          ]
+        ],
+        "qTails": [],
+        "qArea": {
+          "qLeft": 4,
+          "qTop": 0,
+          "qWidth": 1,
+          "qHeight": 30
+        }
+      }
+    ],
+    "qPivotDataPages": [],
+    "qStackedDataPages": [],
+    "qMode": "S",
+    "qNoOfLeftDims": -1,
+    "qTreeNodesOnDim": [],
+    "qColumnOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "columnOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "columnWidths": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "script": "",
+  "search": {
+    "sorting": "auto"
+  },
+  "showTitles": true,
+  "title": "",
+  "subtitle": "",
+  "footnote": "",
+  "disableNavMenu": false,
+  "showDetails": true,
+  "showDetailsExpression": false,
+  "totals": {
+    "show": true,
+    "position": "noTotals",
+    "label": "Totals"
+  },
+  "scrolling": {
+    "horizontal": true,
+    "keepFirstColumnInView": false,
+    "keepFirstColumnInViewTouch": false
+  },
+  "multiline": {
+    "wrapTextInHeaders": true,
+    "wrapTextInCells": true
+  },
+  "visualization": "table",
+  "snapshotData": {
+    "object": {
+      "size": {
+        "w": 1502,
+        "h": 699,
+        "boundingClientWidth": 1504.078125,
+        "boundingClientHeight": 699.65625
+      }
+    },
+    "rtl": false,
+    "parent": {
+      "h": 822,
+      "w": 1920
+    }
+  },
+  "visualizationType": "table",
+  "sourceObjectId": "WEujkfu",
+  "sheetId": "e5bd712c-929a-4923-8a18-13c91adab69f",
+  "timestamp": 1734573457948,
+  "isClone": false,
+  "supportExport": true
+}

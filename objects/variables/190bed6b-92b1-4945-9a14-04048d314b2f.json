@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "190bed6b-92b1-4945-9a14-04048d314b2f",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vCurrentDate",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "2026-01-30",
+  "qIsScriptCreated": true
+}

@@ -1,0 +1,6 @@
+///$tab maps
+mPurchaser:
+Mapping LOAD
+	EmpNo,
+    Nm    
+Resident tmpActor;

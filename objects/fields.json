@@ -1,0 +1,245 @@
+[
+  {
+    "qName": "ComplaintsDate",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "NewComplaints",
+      "CompletedComplaints",
+      "OpenComplaints",
+      "ComplaintsCalendar"
+    ]
+  },
+  {
+    "qName": "ComplaintsDateYearWeek",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "ComplaintsCalendar"
+    ]
+  },
+  {
+    "qName": "CompletedComplaintsOrdNo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CompletedComplaints"
+    ]
+  },
+  {
+    "qName": "DME_PSOrderType",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "DME_ZG_Datum_4",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "DME_ZG_Datum_5",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "DME_ZG_Gr_19",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "DME_ZG_Gr_4",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "DmeZgDatum4",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "Month",
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "MonthNo",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "NewComplaintsOrdNo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "NewComplaints"
+    ]
+  },
+  {
+    "qName": "OpenComplaintsOrdNo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "OpenComplaints"
+    ]
+  },
+  {
+    "qName": "OrdNo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "OrderDate",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Order",
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "Purchaser",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "Rsp",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  },
+  {
+    "qName": "WeekDay",
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "WeekNo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "Year",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "YearMonth",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "YearWeek",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Calendar"
+    ]
+  },
+  {
+    "qName": "isCustomerComplaints",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Order"
+    ]
+  }
+]
