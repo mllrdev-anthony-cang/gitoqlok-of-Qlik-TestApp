@@ -1,2 +1,0 @@
-///$tab drop tmp tables
-Drop table tmpOrder, tmpActor, tmpCalendar;
