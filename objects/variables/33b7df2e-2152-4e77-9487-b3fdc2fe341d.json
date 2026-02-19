@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "33b7df2e-2152-4e77-9487-b3fdc2fe341d",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vLastFullYearMonth",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "202512",
+  "qIsScriptCreated": true
+}

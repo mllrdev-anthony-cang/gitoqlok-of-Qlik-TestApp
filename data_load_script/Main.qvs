@@ -18,3 +18,15 @@ SET LongMonthNames='januari;februari;mars;april;maj;juni;juli;augusti;september;
 SET DayNames='mån;tis;ons;tors;fre;lör;sön';
 SET LongDayNames='måndag;tisdag;onsdag;torsdag;fredag;lördag;söndag';
 SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+SET vQVDPathTransform='lib://Transform_v2 (azure_anthony.cang@mllrdev.com)';
+//SET vQVDPathTransform='lib://TEST_Transform';
+
+Let vCurrentDate = Date(Today());
+Let vEndYear = Year('$(vCurrentDate)');
+Let vStartYear = Num('$(vEndYear)')-1;
+Let vLastFullMonth = MonthEnd('$(vCurrentDate)',-1);
+Let vLastFullYearMonth = Year('$(vLastFullMonth)')&Num(Month('$(vLastFullMonth)'),00);
+
+Let vLast6Month = MonthEnd('$(vCurrentDate)',-7);
+Let vLast12Month = MonthEnd('$(vCurrentDate)',-13);

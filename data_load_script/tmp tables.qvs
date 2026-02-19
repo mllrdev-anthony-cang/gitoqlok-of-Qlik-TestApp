@@ -1,0 +1,20 @@
+///$tab tmp tables
+tmpOrder:
+LOAD
+    *
+FROM [lib://Extract/Ord.qvd] (qvd)
+Where
+DB_Instans = 'F0002';
+
+tmpActor:
+LOAD
+	*   
+FROM [lib://Extract/Actor.qvd] (qvd)
+Where
+DB_Instans = 'F0002' // voky instance
+;
+
+tmpCalendar:
+LOAD
+    *
+FROM [$(vQVDPathTransform)/MasterCalendar.qvd] (qvd);
